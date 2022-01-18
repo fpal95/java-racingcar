@@ -5,6 +5,7 @@ import java.util.List;
 public class Calculator {
 
     public int calculateByOperator (List<String> userInput){
+<<<<<<< HEAD
         int result = Integer.parseInt(userInput.get(0));
 
         for (int i=1; i<userInput.size()-1; i+=2){
@@ -24,6 +25,31 @@ public class Calculator {
                     result = divide(result, nextNumber);
                     continue;
             }
+=======
+        int result=Integer.parseInt(userInput.get(0));
+
+        for (int i=1; i<userInput.size()-1; i+=2){
+            if (userInput.get(i+1).equals("")){
+                throw new IllegalArgumentException("공백이 존재합니다");
+            }
+            if (userInput.get(i).equals("+")){
+                result = sum(result,Integer.parseInt(userInput.get(i+1)));
+                continue;
+            }
+            if (userInput.get(i).equals("-")){
+                result= subtract(result,Integer.parseInt(userInput.get(i+1)));
+                continue;
+            }
+            if (userInput.get(i).equals("*")){
+                result= multiply(result,Integer.parseInt(userInput.get(i+1)));
+                continue;
+            }
+            if (userInput.get(i).equals("/")){
+                result= divide(result,Integer.parseInt(userInput.get(i+1)));
+                continue;
+            }
+            throw new IllegalArgumentException("사칙 연산이 아닙니다");
+>>>>>>> 715512a55 (refactor: calculator 패키지로 이동)
         }
         return result;
     }
