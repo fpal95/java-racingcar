@@ -7,6 +7,7 @@
 
 ## 기능구현 목록
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] 이름 입력 받아 쉼표기준으로 parsing 하기 - User.getCarName()
   - [x] 자동차 이름은 5자를 초과할 수 없다.
 - [x] 사용자 입력값을 토대로 자동차 생성하기 - Car()
@@ -23,6 +24,16 @@
 - [] 각 차수마다 자동차의 위치 출력
 - [] 우승자 구하기
 >>>>>>> 01a450dca (docs(README): 자동차 경주게임 기능구현 목록 작성)
+=======
+현- [x] 이름 입력 받아 parsing 하기 - User.getCarName()
+  - [] 자동차 이름은 5자를 초과할 수 없다.
+- [x] 입력값을 토대로 자동차 생성하기 - Car()
+  - [x] 랜덤값에 따라 자동차 이동정보 갱신 -Car.MoveForward()
+- [x] 시도할 횟수 입력받기 - User.getTryCount()
+- [x] 0에서 9까지 랜덤 수 발생 - RandomGenerator.generateRandomNumber()
+- [x] 각 차수마다 자동차의 위치 출력
+- [x] 제일 많이 이동한 우승자 구하기
+>>>>>>> 4d31bd72b (docs(README): 자동차 게임 기능 구현 목록 추가)
 
 
 
