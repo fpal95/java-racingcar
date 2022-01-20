@@ -103,7 +103,7 @@ public class Game {
             moveForwardByCount(carList);
         }
 
-
+        checkWinner(carList);
     }
 
     public void moveForwardByCount(ArrayList<Car> carList){
@@ -114,6 +114,26 @@ public class Game {
         }
         System.out.println();
     }
+<<<<<<< HEAD
 
 >>>>>>> 964c3fede (feat(Game): 자동차 게임 진행 구현)
+=======
+    public void checkWinner(ArrayList<Car> carList){
+        ArrayList<String> winnerList= new ArrayList<>();
+        OutputView outputView= new OutputView();
+        int maxPosition=0;
+        for (Car car :carList){
+            if(car.getPosition().length()>maxPosition){
+                maxPosition=car.getPosition().length();
+
+            }
+        }
+        for (Car car: carList){
+            if(car.getPosition().length()==maxPosition){
+                winnerList.add(car.getCarName());
+            }
+        }
+        outputView.printWinner(winnerList);
+    }
+>>>>>>> 19c431d9a (feat(Game): 우승자 체크 기능 구현)
 }
