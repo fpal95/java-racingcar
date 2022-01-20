@@ -40,6 +40,16 @@ public class Car {
 >>>>>>> ae90941b6 (feat(Car): 사용자 입력값에 따라 car 생성)
     }
 
+    public void moveForward(){
+        RandomGenerator randomGenerator = new RandomGenerator();
+        int randomNumber=randomGenerator.generateRandomNumber();
+        //System.out.println(randomNumber);
+        if(randomNumber>=4){
+            this.position+="-";
+        }
+
+    }
+
     public String getCarName() {
         return carName;
     }
