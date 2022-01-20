@@ -1,5 +1,6 @@
 package racingcar.model;
 
+<<<<<<< HEAD
 import racingcar.util.Message;
 import racingcar.util.RandomGenerator;
 
@@ -27,6 +28,16 @@ public class Car {
         if (carName.length() > NAME_LENGTH) {
             throw new IllegalArgumentException(Message.CAR_NAME_ERROR);
         }
+=======
+import racingcar.util.RandomGenerator;
+
+public class Car {
+    private String carName;
+    private String position;
+    public Car(String carName){
+        this.carName= carName;
+        this.position="";
+>>>>>>> ae90941b6 (feat(Car): 사용자 입력값에 따라 car 생성)
     }
 
     public String getCarName() {
