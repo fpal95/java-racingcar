@@ -8,6 +8,7 @@
 ## 기능구현 목록
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] 이름 입력 받아 쉼표기준으로 parsing 하기 - User.getCarName()
   - [x] 자동차 이름은 5자를 초과할 수 없다.
 - [x] 사용자 입력값을 토대로 자동차 생성하기 - Car()
@@ -27,6 +28,10 @@
 =======
 현- [x] 이름 입력 받아 parsing 하기 - User.getCarName()
   - [] 자동차 이름은 5자를 초과할 수 없다.
+=======
+- [x] 이름 입력 받아 parsing 하기 - User.getCarName()
+  - [x] 자동차 이름은 5자를 초과할 수 없다.
+>>>>>>> 60bb2e010 (docs(README): 자동차 게임 기능 구현 완료 항목 체크)
 - [x] 입력값을 토대로 자동차 생성하기 - Car()
   - [x] 랜덤값에 따라 자동차 이동정보 갱신 -Car.MoveForward()
 - [x] 시도할 횟수 입력받기 - User.getTryCount()
