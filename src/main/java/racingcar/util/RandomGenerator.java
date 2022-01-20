@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class RandomGenerator {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     private static final int MAX_RANGE_VALUE = 10;
 
@@ -13,6 +14,11 @@ public class RandomGenerator {
 =======
     public int generateRandomNumber(){
         Random random= new Random();
+=======
+
+    public int generateRandomNumber() {
+        Random random = new Random();
+>>>>>>> 715c9de31 (style: 구글 자바 컨벤션 수정)
         return random.nextInt(9);
 >>>>>>> 6d341c991 (feat(RandomGenerator): 랜덤값 생성 구현)
     }

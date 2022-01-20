@@ -6,6 +6,7 @@ import racingcar.util.Message;
 import racingcar.util.RandomGenerator;
 
 public class Car {
+<<<<<<< HEAD
     private static final int MOVING_CONDITION = 4;
     private static final int NAME_LENGTH = 5;
 
@@ -36,26 +37,36 @@ import racingcar.util.Message;
 import racingcar.util.RandomGenerator;
 
 public class Car {
+=======
+
+>>>>>>> 715c9de31 (style: 구글 자바 컨벤션 수정)
     private String carName;
     private String position;
-    public Car(String carName){
+
+    public Car(String carName) {
         validateCarNameLength(carName);
+<<<<<<< HEAD
         this.carName= carName;
         this.position="";
 >>>>>>> ae90941b6 (feat(Car): 사용자 입력값에 따라 car 생성)
+=======
+        this.carName = carName;
+        this.position = "";
+>>>>>>> 715c9de31 (style: 구글 자바 컨벤션 수정)
     }
 
-    public void moveForward(){
+    public void moveForward() {
         RandomGenerator randomGenerator = new RandomGenerator();
-        int randomNumber=randomGenerator.generateRandomNumber();
+        int randomNumber = randomGenerator.generateRandomNumber();
         //System.out.println(randomNumber);
-        if(randomNumber>=4){
-            this.position+="-";
+        if (randomNumber >= 4) {
+            this.position += "-";
         }
 
     }
+
     private void validateCarNameLength(String carName) {
-        if(carName.length()>5){
+        if (carName.length() > 5) {
             throw new IllegalArgumentException(Message.CAR_NAME_ERROR);
         }
     }
