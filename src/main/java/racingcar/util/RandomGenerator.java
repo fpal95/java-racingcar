@@ -16,8 +16,9 @@ public class RandomGenerator {
         Random random= new Random();
 =======
 
+    private static final int maxNumber = 10;
+
     public int generateRandomNumber() {
-        private static final int maxNumber = 10;
         Random random = new Random();
 <<<<<<< HEAD
 >>>>>>> 715c9de31 (style: 구글 자바 컨벤션 수정)
