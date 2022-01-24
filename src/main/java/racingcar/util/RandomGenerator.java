@@ -16,10 +16,11 @@ public class RandomGenerator {
         Random random= new Random();
 =======
 
-    private static final int MAX_RANGE = 10;
+    private static final int MAX_RANGE_VALUE = 10;
 
     public int generateRandomNumber() {
         Random random = new Random();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 715c9de31 (style: 구글 자바 컨벤션 수정)
@@ -31,5 +32,8 @@ public class RandomGenerator {
 =======
         return random.nextInt(MAX_RANGE);
 >>>>>>> 7ad58015c (Remove: empty.txt파일 삭제)
+=======
+        return random.nextInt(MAX_RANGE_VALUE);
+>>>>>>> 0c1b7b3f4 (Style: Google Java Convention에 따라 무작위 값의 명칭 수정)
     }
 }
