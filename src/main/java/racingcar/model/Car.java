@@ -7,6 +7,9 @@ import racingcar.util.RandomGenerator;
 
 public class Car {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d17891ef (Fix: 매직넘버를 상수화)
     private static final int MOVING_CONDITION = 4;
     private static final int NAME_LENGTH = 5;
 
@@ -59,14 +62,14 @@ public class Car {
         RandomGenerator randomGenerator = new RandomGenerator();
         int randomNumber = randomGenerator.generateRandomNumber();
         //System.out.println(randomNumber);
-        if (randomNumber >= 4) {
+        if (randomNumber >= MOVING_CONDITION) {
             this.position += "-";
         }
 
     }
 
     private void validateCarNameLength(String carName) {
-        if (carName.length() > 5) {
+        if (carName.length() > NAME_LENGTH) {
             throw new IllegalArgumentException(Message.CAR_NAME_ERROR);
         }
     }
