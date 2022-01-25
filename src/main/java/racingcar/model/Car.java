@@ -23,6 +23,7 @@ public class Car {
     }
 
     public void moveForward(int randomNumber) {
+<<<<<<< HEAD
         if (randomNumber >= MOVING_CONDITION) {
             this.position += "-";
         }
@@ -62,6 +63,8 @@ public class Car {
         RandomGenerator randomGenerator = new RandomGenerator();
         int randomNumber = randomGenerator.generateRandomNumber();
         //System.out.println(randomNumber);
+=======
+>>>>>>> fa714f3ae (Refactor(Car): moveForward 메서드에 랜덤값을 인자로 추가)
         if (randomNumber >= MOVING_CONDITION) {
             this.position += "-";
         }
