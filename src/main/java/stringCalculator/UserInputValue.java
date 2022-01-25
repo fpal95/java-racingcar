@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class UserInputValue {
+<<<<<<< HEAD
     private static final String BLANK_CARNAME = "빈 문자열입니다";
     private static final String VALIDATE_NUMBER = "숫자가 올바르게 입력되어 있는지 확인해주세요";
     private static final String VALIDATE_OPERATOR = "연산자가 올바르게 입력되어 있는지 확인해주세요";
@@ -45,5 +46,16 @@ public class UserInputValue {
                 throw new IllegalArgumentException(VALIDATE_OPERATOR);
             }
         }
+=======
+
+    public List<String> userInput() {
+        String[] userInputTokens;
+        Scanner scanner = new Scanner(System.in);
+
+        String input = scanner.nextLine();
+        userInputTokens = input.split(" ");
+
+        return Arrays.asList(userInputTokens);
+>>>>>>> 508d1b040 (Refactor(UserInputValue): 입력 메소드 분리)
     }
 }
