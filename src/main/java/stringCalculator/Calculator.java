@@ -45,8 +45,11 @@ public class Calculator {
                 result= divide(result,Integer.parseInt(userInput.get(i+1)));
                 continue;
             }
+<<<<<<< HEAD
             throw new IllegalArgumentException("사칙 연산이 아닙니다");
 >>>>>>> 715512a55 (refactor: calculator 패키지로 이동)
+=======
+>>>>>>> ddff8d8f5 (Refactor(Calcluator): 사칙연산 예외처리 삭제)
         }
         return result;
     }
