@@ -9,6 +9,7 @@ public class Application {
     public static void main(String[] args) {
         UserInputValue input = new UserInputValue();
 <<<<<<< HEAD
+<<<<<<< HEAD
         Calculator calculator = new Calculator();
 
         final List<String> userInput = input.userInput();
@@ -30,9 +31,18 @@ public class Application {
         result= calculator.calculateByOperator(userInput);
 >>>>>>> 715512a55 (refactor: calculator 패키지로 이동)
 =======
+=======
+>>>>>>> 532c6fc90 (Refactor(Application): input객체 선언)
         Calculator calculator = new Calculator();
+
+        final List<String> userInput = input.userInput();
         int result = calculator.calculateByOperator(userInput);
+<<<<<<< HEAD
 >>>>>>> 8274bb7d0 (Fix: result의 변수 선언과 초기화 수정)
+=======
+
+        System.out.println(userInput);
+>>>>>>> 532c6fc90 (Refactor(Application): input객체 선언)
         System.out.println(result);
     }
 }
