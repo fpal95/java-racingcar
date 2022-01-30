@@ -2,6 +2,7 @@ package racingcar.controller;
 
 import java.util.ArrayList;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.List;
 import racingcar.model.Car;
 import racingcar.view.InputView;
@@ -75,8 +76,10 @@ public class Game {
     }
 =======
 import java.util.Comparator;
+=======
+>>>>>>> e766fb80f (Refactor(Game): InputView 객체 생성)
 import racingcar.model.Car;
-import racingcar.model.User;
+import racingcar.view.InputView;
 import racingcar.util.Message;
 import racingcar.util.RandomGenerator;
 import racingcar.view.OutputView;
@@ -85,7 +88,7 @@ public class Game {
 
     public void play() {
         ArrayList<Car> carList = new ArrayList<>();
-        User user = new User();
+        InputView user = new InputView();
 
         System.out.println(Message.INPUT_GUIDE_MESSAGE);
         String[] carNames = user.getCarName();
