@@ -5,12 +5,13 @@ import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
 public class UserTest {
+
     @Test
     void 빈문자열만_입력하면_예외가_발생한다() {
         UserInputValue user = new UserInputValue();
 
         assertThatExceptionOfType(IllegalArgumentException.class)
-            .isThrownBy(() -> user.validateBlankCarName(Arrays.asList("")));
+            .isThrownBy(() -> user.validateBlank(Arrays.asList("")));
     }
 
     @Test
@@ -18,7 +19,8 @@ public class UserTest {
         UserInputValue user = new UserInputValue();
 
         assertThatExceptionOfType(IllegalArgumentException.class)
-            .isThrownBy(() -> user.validateEmptyNumber(Arrays.asList("1", "+", "-", "+", "2", "-", "3")));
+            .isThrownBy(
+                () -> user.validateEmptyNumber(Arrays.asList("1", "+", "-", "+", "2", "-", "3")));
     }
 
     @Test
@@ -26,4 +28,7 @@ public class UserTest {
         UserInputValue user = new UserInputValue();
 
         assertThatExceptionOfType(IllegalArgumentException.class)
-            .isThrownBy(() -> user.validateEmptyOperation(Arrays.asList( "1", "+", "9", "0", "2", "-", "3")));
+            .isThrownBy(() -> user.validateEmptyOperation(
+                Arrays.asList("1", "+", "9", "0", "2", "-", "3")));
+    }
+}
